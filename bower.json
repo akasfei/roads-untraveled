@@ -1,0 +1,22 @@
+{
+  "name": "roads-untraveled",
+  "version": "0.0.1",
+  "authors": [
+    "akasfei <akasfei@gmail.com>"
+  ],
+  "description": "Journeys amongst the stars.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://labs.ssiops.org/roads-untraveled",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

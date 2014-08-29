@@ -1,0 +1,14 @@
+# Site settings
+title: "Roads Untraveled"
+email: super-ops@ssiops.org
+description: > # this means to ignore newlines until "baseurl:"
+  Weep not for roads untraveled
+baseurl: "" # the subpath of your site, e.g. /roads-untraveled/
+url: "http://akasfei.github.io" # the base hostname & protocol for your site
+twitter_username: akasfei
+github_username:  akasfei
+contact: SierraSix
+
+# Build settings
+markdown: kramdown
+highlighter: rogue
