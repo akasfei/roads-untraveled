@@ -11,6 +11,7 @@
 }
 
 .site-title {
+    color: #fff;
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
@@ -18,6 +19,8 @@
     float: left;
 
     &,
+    &:hover,
+    &:active,
     &:visited {
         color: #fff;
     }
@@ -94,6 +97,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-heading {
@@ -170,7 +174,6 @@
 }
 
 .post-list {
-    margin-left: 0;
     list-style: none;
 
     > li {
@@ -232,5 +235,33 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+.scrapbook {
+    position: relative;
+    padding: 0;
+    margin-bottom: 30px;
+    .caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 16px;
+        background: rgba(0, 0, 0, 0.5);
+
+        color: #fff;
+        text-align: center;
+        h1, h2, h3, h4, h5, h6 {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.post-card {
+    position: relative;
+    padding: 0;
+    .content {
+        padding: 12px;
     }
 }

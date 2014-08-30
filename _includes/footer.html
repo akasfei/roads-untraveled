@@ -9,6 +9,7 @@
         <ul class="contact-list">
           <li>{{ site.contact }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
         </ul>
       </div>
 
@@ -46,7 +47,7 @@
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
+        <p class="text">{{ site.description | newline_to_br }}</p>
       </div>
     </div>
 
