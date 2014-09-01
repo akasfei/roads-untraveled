@@ -14,7 +14,7 @@ layout: wide
             {% if post.cover %}
               <img src="{{ "/img/cover/" | prepend: site.baseurl }}{{ post.cover }}" alt="Post cover photo">
             {% else %}
-              <img src="{{ "/img/cover/default-" | prepend: site.baseurl }}{{ post.url | size | modulo: 10 }}.jpg" alt="Post cover photo">
+              <img src="{{ "/img/cover/default-" | prepend: site.baseurl }}{{ post.url | size | times: 7 | modulo: 10 }}.jpg" alt="Post cover photo">
             {% endif %}
             <div class="content">
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
